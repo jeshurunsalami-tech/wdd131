@@ -10,8 +10,11 @@ header,
 main,
 footer {
     font-family: "Barlow", sans-serif;
-    width: 1000px;
     margin: 0 auto;
+}
+
+header {
+    width: 100%;
 }
 
 #course-title {
@@ -41,7 +44,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 850px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -55,7 +58,7 @@ h1 {
 
 .information {
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr 350px;
     margin: 0;
     gap: 10px;
 }
@@ -136,5 +139,6 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 40px;
+    width: 100%;
     background-color: var(--first-color);
 }
