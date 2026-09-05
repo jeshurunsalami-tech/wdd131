@@ -10,9 +10,6 @@ header,
 main,
 footer {
     font-family: "Barlow", sans-serif;
-}
-
-body {
     width: 1000px;
     margin: 0 auto;
 }
