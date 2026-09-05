@@ -6,8 +6,13 @@
     box-sizing: border-box;
 }
 
-body {
+header,
+main,
+footer {
     font-family: "Barlow", sans-serif;
+}
+
+body {
     width: 1000px;
     margin: 0 auto;
 }
@@ -42,7 +47,8 @@ main {
     max-width: 850px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 
 h1 {
