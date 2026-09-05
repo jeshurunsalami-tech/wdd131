@@ -1,0 +1,137 @@
+:root {
+    --first-color: #bbb47f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    background-color: var(--first-color);
+    font-size: 2em;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #312f2f;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+
+nav a:hover {
+    border: 1px solid #fff;
+}
+
+main {
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr gap: 10px;
+}
+
+h1 {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    margin: 0;
+    gap: 10px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.card ul {
+    align-self: center;
+}
+
+.card h2 {
+    display: block;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 0;
+    padding: 15px;
+    background-color: var(--first-color);
+}
+
+.good {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+}
+
+.good img {
+    padding-top: 20px;
+    padding-right: 20px;
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.profile {
+    margin: 0;
+    padding: 10px 0 10px 20px;
+    display: block;
+}
+
+h3 {
+    text-align: center;
+    margin: 0 70px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #5a5757;
+}
+
+.country {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+.country figure {
+    align-self: center;
+    margin: 0;
+}
+
+.country figure figcaption {
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+.country img {
+    width: 150px;
+    height: auto;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 40px;
+    background-color: var(--first-color);
+}
