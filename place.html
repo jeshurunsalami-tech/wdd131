@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A country page about Togo, featuring information about the country and its weather.">
+    <meta name="author" content="Jeshurun Salami">
+    <title>Togo | Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Togo</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/independance-place.webp" media="(min-width: 700px)">
+                <img src="images/independance-place.webp" alt="Togo Independence Place">
+            </picture>
+        </section>
+
+        <section class="country-info">
+            <h2>About Togo</h2>
+            <p>
+                Togo is a country in West Africa known for its beautiful
+                landscapes, cultural diversity, and coastal city of Lomé.
+            </p>
+            <p>
+                The country has a rich cultural heritage and a variety of
+                traditions, languages, and natural environments.
+            </p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <div class="weather-icon">
+                <img src="images/weather.svg" alt="Partly cloudy weather">
+            </div>
+
+            <div class="weather-data">
+                <p><strong>Temperature:</strong> <span id="temperature">30 °C</span></p>
+                <p><strong>Wind Speed:</strong> <span id="wind-speed">12 km/h</span></p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Jeshurun Salami | Togo
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>

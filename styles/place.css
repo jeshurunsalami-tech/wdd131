@@ -1,0 +1,228 @@
+:root {
+    --primary-color: #006a4e;
+    --secondary-color: #ffce00;
+    --accent-color: #d21034;
+    --background-color: #ffffff;
+    --text-color: #222222;
+    --card-color: #f5f5f5;
+    --heading-font: Arial, sans-serif;
+    --body-font: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 1.2rem;
+    border-bottom: 15px solid var(--secondary-color);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* MAIN */
+
+main {
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+}
+
+/* HERO IMAGE */
+
+.hero {
+    width: 100%;
+}
+
+.hero picture,
+.hero img {
+    display: block;
+    width: 100%;
+    padding-bottom: 0.2rem;
+    background-color: var(--secondary-color);
+}
+
+.hero img {
+    height: auto;
+}
+
+/* DATA */
+
+.country-info {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.country-info h2,
+.weather h2 {
+    margin: 0 0 1.5rem;
+    font-size: 1.8rem;
+}
+
+.data-list p {
+    margin: 0.7rem 0;
+    font-size: 1rem;
+}
+
+.data-list strong,
+.weather-data strong {
+    font-weight: bold;
+}
+
+/* WEATHER */
+
+.weather {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.weather-icon {
+    margin: 1rem 0 1.5rem;
+}
+
+.weather-icon img {
+    width: 90px;
+    height: 90px;
+}
+
+.weather-data p {
+    margin: 0.7rem 0;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+/* LARGE SCREEN */
+
+@media screen and (min-width: 700px) {
+
+    body {
+        padding: 0;
+    }
+
+    header {
+        padding: 1.3rem;
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    main {
+        max-width: 100%;
+        position: relative;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+    }
+
+    /* DATA CARD */
+
+    .country-info {
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        width: 250px;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.88);
+        text-align: center;
+    }
+
+    .country-info h2 {
+        margin: 0;
+        padding: 0.8rem;
+        background-color: var(--accent-color);
+        color: var(--white);
+        text-align: left;
+    }
+
+    .data-list {
+        padding: 1rem;
+    }
+
+    .data-list p {
+        margin: 0.55rem 0;
+        font-size: 0.9rem;
+    }
+
+    .weather {
+        position: absolute;
+        top: 640px;
+        right: 15px;
+        width: 250px;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.88);
+        text-align: center;
+    }
+
+    .weather h2 {
+        margin: 0;
+        padding: 0.8rem;
+        background-color: var(--accent-color);
+        color: var(--white);
+        text-align: left;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather-data {
+        padding: 1rem;
+    }
+
+    .weather-data p {
+        margin: 0.6rem 0;
+        font-size: 0.9rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+}
