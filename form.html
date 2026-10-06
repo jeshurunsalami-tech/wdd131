@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product review form">
+    <meta name="description"
+        content="Submit a product review and share your rating, experience, and useful product features.">
     <meta name="author" content="Jeshurun Salami">
     <title>Product Review</title>
     <link rel="stylesheet" href="styles/form.css">
@@ -18,36 +19,43 @@
 </head>
 
 <body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
 
     <main>
         <form method="get" action="review.html">
-
-            <h1>Product Review</h1>
 
             <div class="form-content">
 
                 <label>Product Name</label>
                 <select id="productName" name="productName" required>
-                    <option value="" disabled selected>Choose a Product ...</option>
+                    <option value="" disabled selected>Select a Product ...</option>
                 </select>
 
 
                 <label>Overall Rating</label>
 
                 <div class="rating">
-                    <label><span>☆</span><input type="radio" id="rating1" name="rating" value="1" required></label>
+                    <label for="rating1"><span>☆</span><input type="radio" id="rating1" name="rating" value="1"
+                            required></label>
 
-                    <label><span>☆☆</span><input type="radio" id="rating2" name="rating" value="2" required></label>
+                    <label for="rating2"><span>☆☆</span><input type="radio" id="rating2" name="rating" value="2"
+                            required></label>
 
-                    <label><span>☆☆☆</span><input type="radio" id="rating3" name="rating" value="3" required></label>
+                    <label for="rating3"><span>☆☆☆</span><input type="radio" id="rating3" name="rating" value="3"
+                            required></label>
 
-                    <label><span>☆☆☆☆</span><input type="radio" id="rating4" name="rating" value="4" required></label>
+                    <label for="rating4"><span>☆☆☆☆</span><input type="radio" id="rating4" name="rating" value="4"
+                            required></label>
 
-                    <label><span>☆☆☆☆☆</span><input type="radio" id="rating5" name="rating" value="5" required></label>
+                    <label for="rating5"><span>☆☆☆☆☆</span><input type="radio" id="rating5" name="rating" value="5"
+                            required></label>
                 </div>
 
 
-                <label>Date of Installation<input type="date" id="installDate" name="installDate" required></label>
+                <label for="installDate">Date of Installation<input type="date" id="installDate" name="installDate"
+                        required></label>
 
 
                 <label>Which features did you find useful in the product?<span class="instruction">(Check all that
@@ -55,14 +63,16 @@
 
                 <div class="features">
 
-                    <label><input type="checkbox" id="durability" name="features" value="durability">Durability</label>
+                    <label for="durability"><input type="checkbox" id="durability" name="features"
+                            value="durability">Durability</label>
 
-                    <label><input type="checkbox" id="easeOfUse" name="features" value="ease-of-use">Ease of Use</label>
+                    <label for="easeOfUse"><input type="checkbox" id="easeOfUse" name="features"
+                            value="ease-of-use">Ease of Use</label>
 
-                    <label><input type="checkbox" id="performance" name="features"
+                    <label for="performance"><input type="checkbox" id="performance" name="features"
                             value="performance">Performance</label>
 
-                    <label><input type="checkbox" id="design" name="features" value="design">Design</label>
+                    <label for="design"><input type="checkbox" id="design" name="features" value="design">Design</label>
 
                 </div>
 
@@ -70,7 +80,7 @@
                 <label>Written Review <span class="optional">(Optional)</span></label>
                 <textarea id="writtenReview" name="writtenReview"></textarea>
 
-                <label>Your Name <span class="optional">(Optional)</span><input type="text" id="userName"
+                <label for="userName">Your Name <span class="optional">(Optional)</span><input type="text" id="userName"
                         name="userName"></label>
 
                 <input type="submit" value="Post Review">
