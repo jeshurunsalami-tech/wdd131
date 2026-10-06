@@ -1,12 +1,20 @@
+:root {
+    --primary-color: #ac0707;
+    --secondary-color: #ddd;
+    --text-color: #000;
+    --accent-color: #fff;
+    --heading-font: "Ubuntu", sans-serif;
+    --body-font: "Barlow", sans-serif;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #111;
-    background-color: #ffffff;
+    font-family: var(--body-font);
+    background-color: var(--secondary-color);
 }
 
 main {
@@ -23,14 +31,15 @@ h1 {
     margin: 0;
     padding: 1rem;
     max-width: 100%;
-    background-color: #35002f;
-    color: white;
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     text-align: center;
     font-size: 1.5rem;
 }
 
 .form-content {
-    background-color: #d9d2d9;
+    background-color: #abaaaa;
     padding: 1rem;
     margin: 1rem 0;
     max-width: 100%;
@@ -51,8 +60,8 @@ textarea {
     margin-top: 0.3rem;
     padding: 0.55rem;
     border: none;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--accent-color);
+    font-family: var(--body-font);
     font-size: 0.9rem;
 }
 
@@ -115,7 +124,7 @@ textarea {
 }
 
 .optional {
-    color: #19196e;
+    color: #100a5b;
     font-size: 0.75rem;
 }
 
@@ -124,15 +133,15 @@ input[type="submit"] {
     height: 2.5rem;
     margin-top: 1rem;
     border: 1px solid #999;
-    background-color: #eeeeee;
-    color: #111;
+    background-color: #ecf68d;
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #cccccc;
+    background-color: #45c164;
 }
 
 select:focus,
@@ -146,8 +155,8 @@ footer {
     max-width: 100%;
     margin: 0;
     padding: 1rem;
-    background-color: #35002f;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     text-align: center;
     font-size: 0.8rem;
 }
@@ -162,11 +171,13 @@ footer p {
 
 .confirmation-content {
     padding: 2rem 1rem;
-    background-color: #d9d2d9;
+    font-family: var(--body-font);
+    background-color: var(--secondary-color);
 }
 
 .confirmation-content h2 {
-    color: #35002f;
+    color: #075a12;
+    font-family: var(--heading-font);
 }
 
 
