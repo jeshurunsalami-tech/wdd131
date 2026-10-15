@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="120" viewBox="0 0 520 120" role="img" aria-labelledby="title desc">
+  <title id="title">Togo Explorer</title>
+  <desc id="desc">A green location pin containing mountains, an orange sun, and a winding river, beside the Togo Explorer name and tagline.</desc>
+  <defs>
+    <clipPath id="pinClip">
+      <path d="M54 8 C30 8 12 26 12 50 C12 78 54 108 54 108 C54 108 96 78 96 50 C96 26 78 8 54 8 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#pinClip)">
+    <rect x="12" y="8" width="84" height="100" fill="#F8F9F5"/>
+    <circle cx="54" cy="35" r="10" fill="#F4A340"/>
+    <path d="M7 68 L31 39 L45 54 L60 36 L84 65 L102 78 L102 92 L7 92 Z" fill="#A5D6A7"/>
+    <path d="M8 78 L31 54 L45 68 L62 48 L83 72 L101 85 L101 104 L8 104 Z" fill="#5B8F61"/>
+    <path d="M7 79 C23 74 30 85 43 82 C56 79 59 91 72 88 C83 85 91 93 102 90 L102 109 L7 109 Z" fill="#DCEFEA"/>
+    <path d="M40 80 C47 83 51 88 60 88 C68 88 70 94 79 95" fill="none" stroke="#67B7C2" stroke-width="5" stroke-linecap="round"/>
+    <path d="M40 80 C47 83 51 88 60 88 C68 88 70 94 79 95" fill="none" stroke="#EAF8F7" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <path d="M54 8 C30 8 12 26 12 50 C12 78 54 108 54 108 C54 108 96 78 96 50 C96 26 78 8 54 8 Z" fill="none" stroke="#1B5E20" stroke-width="4" stroke-linejoin="round"/>
+  <text x="119" y="53" font-family="Poppins, Arial, sans-serif" font-size="31" font-weight="700" fill="#1B5E20">Togo Explorer</text>
+  <text x="121" y="79" font-family="Open Sans, Arial, sans-serif" font-size="14" letter-spacing="0.35" fill="#1F2933">Discover. Explore. Experience.</text>
+</svg>

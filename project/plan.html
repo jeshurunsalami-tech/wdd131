@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Plan your trip to Togo with Togo Explorer. Find travel tips, prepare your visit, and contact us for assistance.">
+    <meta name="author" content="Jeshurun Salami">
+    <title>Plan Your Trip | Togo Explorer</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="plan.html" class="logo">
+                <img src="images/togo-explorer-logo.svg" alt="Togo Explorer logo" width="60" height="60">
+            </a>
+
+            <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="plan.html" class="active plan-button">Plan Your Trip</a></li>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form method="get" action="confirmation.html">
+            <section class="plan-page-hero">
+                <div class="plan-page-hero-content">
+                    <h1>Plan Your Trip to Togo</h1>
+                    <p>Prepare your journey and discover everything Togo has to offer.</p>
+                </div>
+            </section>
+
+            <section class="travel-intro">
+                <div class="section-container">
+                    <h2>Start Planning Your Adventure</h2>
+                    <p>
+                        Togo offers beautiful landscapes, cultural experiences, historical
+                        landmarks, and welcoming communities. Use this page to prepare
+                        your visit and tell us more about your travel plans.
+                    </p>
+                </div>
+            </section>
+
+            <section class="travel-tips">
+                <div class="section-container">
+                    <h2>Travel Tips</h2>
+
+                    <div class="travel-tips-grid">
+                        <article class="travel-tip">
+                            <h3>Choose Your Destinations</h3>
+                            <p>
+                                Explore different regions of Togo and choose the places
+                                you would like to visit.
+                            </p>
+                        </article>
+
+                        <article class="travel-tip">
+                            <h3>Prepare Your Stay</h3>
+                            <p>
+                                Plan your accommodation, transportation, and daily
+                                activities before your trip.
+                            </p>
+                        </article>
+
+                        <article class="travel-tip">
+                            <h3>Discover the Culture</h3>
+                            <p>
+                                Learn about local traditions, food, languages, and
+                                cultural activities during your visit.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trip-planner" id="trip-planner">
+                <div class="section-container">
+                    <h2>Tell Us About Your Trip</h2>
+                    <p>
+                        Complete the form below to share your travel plans with us.
+                    </p>
+
+                    <form id="trip-form">
+                        <div class="form-group">
+                            <label for="visitor-name">Full Name</label>
+                            <input type="text" id="visitor-name" name="visitor-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="visitor-email">Email Address</label>
+                            <input type="email" id="visitor-email" name="visitor-email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="arrival-date">Planned Arrival Date</label>
+                            <input type="date" id="arrival-date" name="arrival-date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="trip-duration">How Long Will You Stay?</label>
+                            <select id="trip-duration" name="trip-duration" required>
+                                <option value="">Select your trip duration</option>
+                                <option value="1-3 days">1–3 days</option>
+                                <option value="4-7 days">4–7 days</option>
+                                <option value="1-2 weeks">1–2 weeks</option>
+                                <option value="more than 2 weeks">More than 2 weeks</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="travelers">Number of Travelers</label>
+                            <input type="number" id="travelers" name="travelers" min="1" required>
+                        </div>
+
+                        <fieldset class="form-group">
+                            <legend>What Are You Interested In?</legend>
+
+                            <label>
+                                <input type="checkbox" name="interests" value="Culture">
+                                Culture and Traditions
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="interests" value="History">
+                                History and Landmarks
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="interests" value="Nature">
+                                Nature and Landscapes
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="interests" value="Food">
+                                Local Food
+                            </label>
+                        </fieldset>
+
+                        <div class="form-group">
+                            <label for="additional-message">Additional Information</label>
+                            <textarea id="additional-message" name="additional-message" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="button">Submit Travel Plans</button>
+
+                        <p id="form-message" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <div class="section-container">
+                    <h2>Contact Us</h2>
+                    <p>
+                        Do you have questions about your visit to Togo? Contact us
+                        for more information.
+                    </p>
+
+                    <div class="contact-information">
+                        <p>
+                            <strong>Phone:</strong>
+                            <a href="tel:+22898161530">+228 98 16 15 30</a>
+                        </p>
+
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:YOUR_EMAIL@example.com">jeshurunsalami@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <p>
+                        At Togo Explorer, our goal is to help visitors discover
+                        the culture, history, and beauty of Togo.
+                    </p>
+                </div>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- Footer logo -->
+            <a href="index.html" class="footer-logo">
+                <img src="images/togo-explorer-logo.svg" alt="Togo Explorer logo">
+            </a>
+
+            <!-- Social media icons -->
+            <div class="social-links">
+
+                <a href="https://www.facebook.com/" aria-label="Facebook">
+                    <img src="images/facebook.png" alt="Facebook Icon">
+                </a>
+
+                <a href="https://www.instagram.com/" aria-label="Instagram">
+                    <img src="images/instagram.png" alt="Instagram Icon">
+                </a>
+
+                <a href="https://www.youtube.com/" aria-label="YouTube">
+                    <img src="images/youtube.png" alt="Youtube Icon">
+                </a>
+
+            </div>
+
+            <!-- Copyright and modification date -->
+            <p>
+                &copy; <span id="copyright-year">2026</span>
+                Togo Explorer. All rights reserved.
+            </p>
+
+            <p>
+                Last modified: <span id="last-modified"></span>
+            </p>
+
+            <a href="about.html">About the company</a>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
