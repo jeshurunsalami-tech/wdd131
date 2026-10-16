@@ -59,28 +59,28 @@ if (heroImages.length > 0) {
 const destinations = [
     {
         name: "Lomé Beach",
-        image: "images/lome-beach.webp",
+        image: "images/lomé-beach.jpg",
         alt: "Lomé Beach in Togo",
         description: "Culture · History · Tradition",
         link: "destinations.html#lome-beach"
     },
     {
         name: "Koutammakou",
-        image: "images/koutammakou.webp",
+        image: "images/koutamakou.jpg",
         alt: "Koutammakou in Togo",
         description: "Culture · History · Tradition",
         link: "destinations.html#koutammakou"
     },
     {
         name: "Mont Agou",
-        image: "images/mont-agou.webp",
+        image: "images/mont-agou.jpg",
         alt: "Green mountain landscape of Mont Agou",
         description: "Nature · Hiking · Adventure",
         link: "destinations.html#mont-agou"
     },
     {
         name: "Historical Site",
-        image: "images/historical-site.webp",
+        image: "images/independance-site.jpg",
         alt: "Historical site in Togo",
         description: "History · Culture · Tradition",
         link: "destinations.html#historical-site"
