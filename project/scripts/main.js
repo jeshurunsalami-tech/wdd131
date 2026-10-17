@@ -6,18 +6,71 @@ const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector("header nav");
 
 if (menuButton && navigation) {
+    function closeMobileMenu() {
+        navigation.classList.remove("open");
+        menuButton.textContent = "☰";
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation menu");
+
+        if (window.innerWidth <= 700) {
+            navigation.style.display = "none";
+        }
+    }
+
+    function openMobileMenu() {
+        navigation.classList.add("open");
+        navigation.style.display = "flex";
+        navigation.style.flexDirection = "column";
+        navigation.style.width = "100%";
+
+        menuButton.textContent = "✕";
+        menuButton.setAttribute("aria-expanded", "true");
+        menuButton.setAttribute("aria-label", "Close navigation menu");
+    }
+
+    function updateNavigation() {
+        if (window.innerWidth <= 700) {
+            if (menuButton.getAttribute("aria-expanded") === "true") {
+                openMobileMenu();
+            } else {
+                closeMobileMenu();
+            }
+
+            menuButton.style.display = "block";
+        } else {
+            navigation.style.display = "";
+            navigation.style.flexDirection = "";
+            navigation.style.width = "";
+            navigation.classList.remove("open");
+
+            menuButton.textContent = "☰";
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Open navigation menu");
+            menuButton.style.display = "none";
+        }
+    }
+
     menuButton.addEventListener("click", function () {
-        navigation.classList.toggle("open");
+        const isOpen = menuButton.getAttribute("aria-expanded") === "true";
 
-        const isOpen = navigation.classList.contains("open");
-
-        menuButton.textContent = isOpen ? "✕" : "☰";
-        menuButton.setAttribute("aria-expanded", isOpen);
-        menuButton.setAttribute(
-            "aria-label",
-            isOpen ? "Close navigation menu" : "Open navigation menu"
-        );
+        if (isOpen) {
+            closeMobileMenu();
+        } else {
+            openMobileMenu();
+        }
     });
+
+    navigation.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            if (window.innerWidth <= 700) {
+                closeMobileMenu();
+            }
+        });
+    });
+
+    window.addEventListener("resize", updateNavigation);
+
+    updateNavigation();
 }
 
 
@@ -134,17 +187,19 @@ if (copyrightYear) {
 }
 
 
-// 5. Footer: Last Modified Date
+// 5. Footer: Last Modified Date and Time
 
 const lastModified = document.querySelector("#last-modified");
 
 if (lastModified) {
     const modificationDate = new Date(document.lastModified);
 
-    lastModified.textContent = modificationDate.toLocaleDateString("en-US", {
+    lastModified.textContent = modificationDate.toLocaleString("en-US", {
         year: "numeric",
         month: "long",
-        day: "numeric"
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
     });
 }
 
