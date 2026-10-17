@@ -1690,7 +1690,7 @@ textarea {
 
 
 /* Small Mobile Screens */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 599px) {
     .header-container {
         gap: 0.5rem;
         padding: 0.75rem;
